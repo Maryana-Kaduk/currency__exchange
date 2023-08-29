@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Конвертер валют</title>
+  </head>
+  <body>
+    <article class="exchange">
+      <h1>Currency exchange</h1>
+      <section class="choose">
+        <section class="sub__choose">
+          <h4>з</h4>
+          <select name="fromCurrency" id="fromCurrency">
+            <option value="hryvnia" selcted>UAH</option>
+            <option value="euro">EUR</option>
+            <option value="dollar">USD</option>
+            <option value="zloty">PLN</option>
+          </select>
+        </section>
+        <img src="./arrow.svg" alt="" class="arrow" />
+        <section class="sub__choose">
+          <h4>до</h4>
+          <select name="toCurrency" id="toCurrency">
+            <option value="hryvnia">UAH</option>
+            <option value="euro" selected>EUR</option>
+            <option value="dollar">USD</option>
+            <option value="zloty">PLN</option>
+          </select>
+        </section>
+      </section>
+      <div class="input__wrapper">
+        <input type="text" id="amount" placeholder="введіть сумму" />
+        <div class="currency__name">UAH</div>
+      </div>
+      <div class="wrapper">
+        <button>Показати відповідь</button>
+      </div>
+      <section class="answer-section">
+        <h3 class="answer-heading">Відповідь:</h3>
+        <h2 class="answer">0</h2>
+      </section>
+    </article>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
